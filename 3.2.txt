@@ -1,0 +1,5 @@
+        if (a%3 == 0){
+            System.out.println("3で割り切れます");
+        }else{
+            System.out.println("3で割り切れません");
+        }
