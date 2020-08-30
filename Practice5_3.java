@@ -1,5 +1,10 @@
 public class Practice5_3 {
-    public static void main(String[] args) {
+    public static void main(String[] args){
+
+        Rectangle re = new Rectangle(4,4);
+        System.out.println(re.getArea());
+        Rectangle r = new Rectangle(5,5);
+        System.out.println(re.isLarger(r));
     }
 }
 
