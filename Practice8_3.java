@@ -1,4 +1,4 @@
-interface I{
+interface I {
     void printMessage(String messeage);
 }
 
