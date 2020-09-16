@@ -3,6 +3,11 @@ import java.util.*;
 public class Practice13_3 {
     public static void main(String[] args) {
 
+        LinkedList<String> list = new LinkedList<>();
+        list.addLast("あ");
+        list.addLast("い");
+
+
         for (String str : list) { //(1)
             System.out.println(str);
         }
