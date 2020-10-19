@@ -14,11 +14,10 @@ import javax.swing.JSeparator;
 
 public class Hiit extends JFrame implements ActionListener {
     public static void main(String[] args) {
-
         new Hiit();
     }
 
-    JComboBox c1;
+    JComboBox<String> c1;
 
     public Hiit() {
 
@@ -46,21 +45,21 @@ public class Hiit extends JFrame implements ActionListener {
     }
 
     @Override
-    public void actionPerformed(ActionEvent a) {
+    public void actionPerformed(ActionEvent actionEvent) {
 
-        int b = 30;   //運動(秒)
-        int c = 10;   //インターバル(秒)
-        int d = Integer.parseInt(c1.getSelectedItem().toString());  //セット数
+        int exercise = 30;   //運動(秒)
+        int interval = 10;   //インターバル(秒)
+        int setCount = Integer.parseInt(c1.getSelectedItem().toString());  //セット数
 
-        for(int i = 0; i < d; i++) {
+        for(int i = 0; i < setCount; i++) {
             try {
-                Thread.sleep(1000 * b );
+                Thread.sleep(1000 * exercise );
             } catch (InterruptedException e) {
                 System.out.println(e);
             }
             java.awt.Toolkit.getDefaultToolkit().beep();
             try {
-                Thread.sleep(1000 * c );
+                Thread.sleep(1000 * interval );
             } catch (InterruptedException e) {
                 System.out.println(e);
             }
